@@ -20,7 +20,7 @@ class SiluLayer(layers.Layer):
 # Load model sekali saat aplikasi start
 @st.cache_resource
 def load_my_model():
-    model_path = 'D:\\Semester 6\\PDM\\model_ujicoba.keras'  # Ganti path sesuai kamu
+    model_path = 'model/model_ujicoba.keras'  # Ganti path sesuai kamu
     model = load_model(model_path, custom_objects={'Silu': SiluLayer})
     return model
 
